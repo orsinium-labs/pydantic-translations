@@ -20,11 +20,11 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:18
 msgid "str type expected"
-msgstr ""
+msgstr "ожидалась строка"
 
 #: ./pydantic_translations/_messages.py:19
 msgid "value could not be parsed to a boolean"
-msgstr ""
+msgstr "значение не может быть интерпретировано как логический тип"
 
 #: ./pydantic_translations/_messages.py:22
 msgid "could not parse value and unit from byte string"
@@ -32,11 +32,11 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:23
 msgid "extra fields not permitted"
-msgstr ""
+msgstr "дополнительные поля не разрешены"
 
 #: ./pydantic_translations/_messages.py:24
 msgid "invalid date format"
-msgstr ""
+msgstr "некорректный формат даты"
 
 #: ./pydantic_translations/_messages.py:25
 msgid "invalid datetime format"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:26
 msgid "invalid duration format"
-msgstr ""
+msgstr "некорректный формат продолжительности"
 
 #: ./pydantic_translations/_messages.py:27
 msgid "Invalid JSON"
@@ -52,91 +52,11 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:28
 msgid "invalid time format"
-msgstr ""
+msgstr "некорректный формат времени"
 
 #: ./pydantic_translations/_messages.py:29
 msgid "value is not a valid email address"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:30
-msgid "value is not a valid IPv4 address"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:31
-msgid "value is not a valid IPv4 interface"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:32
-msgid "value is not a valid IPv4 network"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:33
-msgid "value is not a valid IPv4 or IPv6 address"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:34
-msgid "value is not a valid IPv4 or IPv6 interface"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:35
-msgid "value is not a valid IPv4 or IPv6 network"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:36
-msgid "value is not a valid IPv6 address"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:37
-msgid "value is not a valid IPv6 interface"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:38
-msgid "value is not a valid IPv6 network"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:17
-msgid "byte type expected"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:18
-msgid "str type expected"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:19
-msgid "value could not be parsed to a boolean"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:22
-msgid "could not parse value and unit from byte string"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:23
-msgid "extra fields not permitted"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:24
-msgid "invalid date format"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:25
-msgid "invalid datetime format"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:26
-msgid "invalid duration format"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:27
-msgid "Invalid JSON"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:28
-msgid "invalid time format"
-msgstr ""
-
-#: ./pydantic_translations/_messages.py:29
-msgid "value is not a valid email address"
-msgstr ""
+msgstr "некорректный формат адреса электронной почты"
 
 #: ./pydantic_translations/_messages.py:30
 msgid "value is not a valid IPv4 address"
@@ -221,7 +141,7 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:60
 msgid "value is not a valid float"
-msgstr ""
+msgstr "значение должно быть десятичным числом"
 
 #: ./pydantic_translations/_messages.py:61
 msgid "value is not a valid frozenset"
@@ -238,11 +158,11 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:64
 msgid "value is not a valid integer"
-msgstr ""
+msgstr "значение должно быть целым числом"
 
 #: ./pydantic_translations/_messages.py:65
 msgid "value is not a valid iterable"
-msgstr ""
+msgstr "значение должно быть итерируемым"
 
 #: ./pydantic_translations/_messages.py:66
 msgid "JSON object must be str, bytes or bytearray"
@@ -250,7 +170,7 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:67
 msgid "value is not a valid list"
-msgstr ""
+msgstr "значение должно быть списком"
 
 #: ./pydantic_translations/_messages.py:68
 msgid "value is not none"
@@ -258,15 +178,15 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:69
 msgid "none is not an allowed value"
-msgstr ""
+msgstr "значение не должно быть None"
 
 #: ./pydantic_translations/_messages.py:70
 msgid "value is not None"
-msgstr ""
+msgstr "значение должно быть None"
 
 #: ./pydantic_translations/_messages.py:71
 msgid "value is not a valid path"
-msgstr ""
+msgstr "значение не должно быть корректным путём"
 
 #: ./pydantic_translations/_messages.py:72
 #, python-brace-format
@@ -277,11 +197,11 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:73
 msgid "value is not a valid sequence"
-msgstr ""
+msgstr "значение не должно быть последовательностью"
 
 #: ./pydantic_translations/_messages.py:74
 msgid "value is not a valid set"
-msgstr ""
+msgstr "значение не должно быть множеством"
 
 #: ./pydantic_translations/_messages.py:75
 #, python-brace-format
@@ -290,7 +210,7 @@ msgstr ""
 
 #: ./pydantic_translations/_messages.py:76
 msgid "value is not a valid tuple"
-msgstr ""
+msgstr "значение не должно быть кортежем"
 
 #: ./pydantic_translations/_messages.py:77
 msgid "value is not a valid uuid"
@@ -309,25 +229,25 @@ msgstr ""
 #: ./pydantic_translations/_messages.py:80
 #, python-brace-format
 msgid "value is not a valid color: {reason}"
-msgstr ""
+msgstr "значение не является корректным цветом: {reason}"
 
 #: ./pydantic_translations/_messages.py:81
 #, python-brace-format
 msgid "unexpected value; permitted: {permitted}"
-msgstr ""
+msgstr "неожиданное значение; ожидалось: {permitted}"
 
 #: ./pydantic_translations/_messages.py:82
 msgid "date is not in the future"
-msgstr ""
+msgstr "указанная дата не в будущем"
 
 #: ./pydantic_translations/_messages.py:83
 msgid "date is not in the past"
-msgstr ""
+msgstr "указанная дата не в прошлом"
 
 #: ./pydantic_translations/_messages.py:84
 #, python-brace-format
 msgid "ensure that there are no more than {max_digits} digits in total"
-msgstr ""
+msgstr "в сумме должно быть не больше {max_digits} цифр"
 
 #: ./pydantic_translations/_messages.py:85
 #, python-brace-format
