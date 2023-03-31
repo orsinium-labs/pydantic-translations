@@ -3,8 +3,10 @@ from dataclasses import dataclass
 from functools import lru_cache
 import re
 from typing import TYPE_CHECKING, Literal
+
 from ._messages import WITH_CODES
 from gettext import gettext
+from pydantic import ValidationError
 
 if TYPE_CHECKING:
     from pydantic.error_wrappers import ErrorDict
@@ -15,16 +17,31 @@ DEFAULT_LOCALE = 'en-US'
 
 
 @dataclass(frozen=True)
-class Translate:
+class Translator:
     locale: Literal['en-US']
 
-    def error(self, err: ErrorDict) -> ErrorDict:
-        result = self.maybe_error(err)
+    def __enter__(self) -> None:
+        return None
+
+    def __exit__(self, *exc_info) -> None:
+        ...
+
+    def translate_exception(self, exc: ValidationError) -> ValidationError:
+        errors = [self.translate_error(err) for err in exc.errors()]
+        result = ValidationError(
+            errors=exc.raw_errors,
+            model=exc.model,
+        )
+        result._error_cache = errors
+        return result
+
+    def translate_error(self, err: ErrorDict) -> ErrorDict:
+        result = self.maybe_translate_error(err)
         if result is None:
             return err
         return result
 
-    def maybe_error(self, err: ErrorDict) -> ErrorDict | None:
+    def maybe_translate_error(self, err: ErrorDict) -> ErrorDict | None:
         if self.locale == DEFAULT_LOCALE:
             return err
 
