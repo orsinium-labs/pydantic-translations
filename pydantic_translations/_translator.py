@@ -16,12 +16,12 @@ if TYPE_CHECKING:
 
 
 REX_TRANSFORM = re.compile(r'\{([a-z_]+?)(\!r)?\}')
-DEFAULT_LOCALE = 'en-US'
+DEFAULT_LOCALE = 'en'
 
 
 @dataclass(frozen=True)
 class Translator:
-    locale: Literal['en-US']
+    locale: Literal['en']
 
     def __enter__(self) -> None:
         return None
@@ -49,11 +49,13 @@ class Translator:
             return err
 
         eng_message = err['msg']
-        eng_pattern = WITH_CODES.get(err['type'], eng_message)
-        if isinstance(eng_pattern, tuple):
-            if eng_message not in eng_pattern:
+        eng_patterns = WITH_CODES.get(err['type'], eng_message)
+        if isinstance(eng_patterns, tuple):
+            if eng_message not in eng_patterns:
                 return None
             eng_pattern = eng_message
+        else:
+            eng_pattern = eng_patterns
 
         new_msg = _format(
             eng_pattern=eng_pattern,

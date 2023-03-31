@@ -24,7 +24,10 @@ keywords = [
     "annotations",
     "type annotations",
 ]
-dependencies = ["l10n"]
+dependencies = [
+    "l10n",
+    "pydantic >=1.0.0,<2.0.0",
+]
 
 [project.optional-dependencies]
 test = [
@@ -39,6 +42,7 @@ lint = [
 ]
 l10n = [
     "l10n[cli]",
+    "mypy",
 ]
 
 [project.urls]

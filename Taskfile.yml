@@ -96,6 +96,7 @@ tasks:
     desc: "run Python tests"
     deps:
       - install:test
+      - l10n:compile
     cmds:
       - "{{.TEST_PYTHON}} -m pytest {{.CLI_ARGS}}"
   flake8:
@@ -134,7 +135,16 @@ tasks:
     deps:
       - install:l10n
     cmds:
-      - "{{.L10N_ENV}}/bin/python -m l10n extract --lang ru_RU"
+      - "{{.L10N_ENV}}/bin/python -m l10n extract {{.CLI_ARGS}}"
+
+  l10n:compile:
+    desc: "generate PO files"
+    sources:
+      - locales/*.po
+    deps:
+      - install:l10n
+    cmds:
+      - "{{.L10N_ENV}}/bin/python -m l10n compile --allow-empty {{.CLI_ARGS}}"
 
   # groups
   format:
