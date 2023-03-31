@@ -79,6 +79,7 @@ tasks:
     desc: generate and upload a new release
     deps:
       - install:flit
+      - l10n:compile
     cmds:
       - which gh
       - test {{.CLI_ARGS}}

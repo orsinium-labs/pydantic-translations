@@ -21,7 +21,6 @@ def _get_without_codes() -> set[str]:
 
         # value errors
         loc.get('could not parse value and unit from byte string'),
-        loc.get('extra fields not permitted'),
         loc.get('invalid date format'),
         loc.get('invalid datetime format'),
         loc.get('invalid duration format'),
@@ -88,6 +87,7 @@ def _get_with_codes() -> dict[str, str | tuple[str, ...]]:
         'value_error.decimal.whole_digits':     loc.get('ensure that there are no more than {whole_digits} digits before the decimal point'),
         'value_error.discriminated_union.invalid_discriminator': loc.get('No match for discriminator {discriminator_key!r} and value {discriminator_value!r} (allowed values: {allowed_values})'),
         'value_error.discriminated_union.missing_discriminator': loc.get('Discriminator {discriminator_key!r} is missing in value'),
+        'value_error.extra':                    loc.get('extra fields not permitted'),
         'value_error.frozenset.max_items':      loc.get('ensure this value has at most {limit_value} items'),
         'value_error.frozenset.min_items':      loc.get('ensure this value has at least {limit_value} items'),
         'value_error.invalidbytesizeunit':      loc.get('could not interpret byte unit: {unit}'),

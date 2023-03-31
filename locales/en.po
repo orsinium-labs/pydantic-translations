@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pydantic-translations 0.0.0\n"
 "Report-Msgid-Bugs-To: git@orsinium.dev\n"
 "POT-Creation-Date: 2023-03-31 10:36+0200\n"
-"PO-Revision-Date: 2023-03-31 10:58+0200\n"
+"PO-Revision-Date: 2023-03-31 12:14+0200\n"
 "Last-Translator: Gram <git@orsinium.dev>\n"
 "Language-Team: Gram <git@orsinium.dev>\n"
 "Language: en\n"
@@ -30,165 +30,165 @@ msgstr "value could not be parsed to a boolean"
 msgid "could not parse value and unit from byte string"
 msgstr "could not parse value and unit from byte string"
 
-#: pydantic_translations/_messages.py:24
+#: pydantic_translations/_messages.py:90
 msgid "extra fields not permitted"
 msgstr "extra fields not permitted"
 
-#: pydantic_translations/_messages.py:25
+#: pydantic_translations/_messages.py:24
 msgid "invalid date format"
 msgstr "invalid date format"
 
-#: pydantic_translations/_messages.py:26
+#: pydantic_translations/_messages.py:25
 msgid "invalid datetime format"
 msgstr "invalid datetime format"
 
-#: pydantic_translations/_messages.py:27
+#: pydantic_translations/_messages.py:26
 msgid "invalid duration format"
 msgstr "invalid duration format"
 
-#: pydantic_translations/_messages.py:28
+#: pydantic_translations/_messages.py:27
 msgid "Invalid JSON"
 msgstr "Invalid JSON"
 
-#: pydantic_translations/_messages.py:29
+#: pydantic_translations/_messages.py:28
 msgid "invalid time format"
 msgstr "invalid time format"
 
-#: pydantic_translations/_messages.py:30
+#: pydantic_translations/_messages.py:29
 msgid "value is not a valid email address"
 msgstr "value is not a valid email address"
 
-#: pydantic_translations/_messages.py:31
+#: pydantic_translations/_messages.py:30
 msgid "value is not a valid IPv4 address"
 msgstr "value is not a valid IPv4 address"
 
-#: pydantic_translations/_messages.py:32
+#: pydantic_translations/_messages.py:31
 msgid "value is not a valid IPv4 interface"
 msgstr "value is not a valid IPv4 interface"
 
-#: pydantic_translations/_messages.py:33
+#: pydantic_translations/_messages.py:32
 msgid "value is not a valid IPv4 network"
 msgstr "value is not a valid IPv4 network"
 
-#: pydantic_translations/_messages.py:34
+#: pydantic_translations/_messages.py:33
 msgid "value is not a valid IPv4 or IPv6 address"
 msgstr "value is not a valid IPv4 or IPv6 address"
 
-#: pydantic_translations/_messages.py:35
+#: pydantic_translations/_messages.py:34
 msgid "value is not a valid IPv4 or IPv6 interface"
 msgstr "value is not a valid IPv4 or IPv6 interface"
 
-#: pydantic_translations/_messages.py:36
+#: pydantic_translations/_messages.py:35
 msgid "value is not a valid IPv4 or IPv6 network"
 msgstr "value is not a valid IPv4 or IPv6 network"
 
-#: pydantic_translations/_messages.py:37
+#: pydantic_translations/_messages.py:36
 msgid "value is not a valid IPv6 address"
 msgstr "value is not a valid IPv6 address"
 
-#: pydantic_translations/_messages.py:38
+#: pydantic_translations/_messages.py:37
 msgid "value is not a valid IPv6 interface"
 msgstr "value is not a valid IPv6 interface"
 
-#: pydantic_translations/_messages.py:39
+#: pydantic_translations/_messages.py:38
 msgid "value is not a valid IPv6 network"
 msgstr "value is not a valid IPv6 network"
 
-#: pydantic_translations/_messages.py:51
+#: pydantic_translations/_messages.py:50
 #, python-brace-format
 msgid "instance of {expected_arbitrary_type} expected"
 msgstr "instance of {expected_arbitrary_type} expected"
 
-#: pydantic_translations/_messages.py:52
+#: pydantic_translations/_messages.py:51
 msgid "value is not a valid boolean"
 msgstr "value is not a valid boolean"
 
-#: pydantic_translations/_messages.py:53
+#: pydantic_translations/_messages.py:52
 #, python-brace-format
 msgid "{value} is not callable"
 msgstr "{value} is not callable"
 
-#: pydantic_translations/_messages.py:54
+#: pydantic_translations/_messages.py:53
 msgid "a class is expected"
 msgstr "a class is expected"
 
-#: pydantic_translations/_messages.py:55
+#: pydantic_translations/_messages.py:54
 #, python-brace-format
 msgid "instance of {class_name}, tuple or dict expected"
 msgstr "instance of {class_name}, tuple or dict expected"
 
-#: pydantic_translations/_messages.py:87
+#: pydantic_translations/_messages.py:86
 msgid "value is not a valid decimal"
 msgstr "value is not a valid decimal"
 
-#: pydantic_translations/_messages.py:57
+#: pydantic_translations/_messages.py:56
 msgid "value is not a valid deque"
 msgstr "value is not a valid deque"
 
-#: pydantic_translations/_messages.py:58
+#: pydantic_translations/_messages.py:57
 msgid "value is not a valid dict"
 msgstr "value is not a valid dict"
 
-#: pydantic_translations/_messages.py:59
+#: pydantic_translations/_messages.py:58
 #, python-brace-format
 msgid "{value} is not a valid Enum instance"
 msgstr "{value} is not a valid Enum instance"
 
-#: pydantic_translations/_messages.py:60
+#: pydantic_translations/_messages.py:59
 #, python-brace-format
 msgid "value is not a valid enumeration member; permitted: {permitted}"
 msgstr "value is not a valid enumeration member; permitted: {permitted}"
 
-#: pydantic_translations/_messages.py:61
+#: pydantic_translations/_messages.py:60
 msgid "value is not a valid float"
 msgstr "value is not a valid float"
 
-#: pydantic_translations/_messages.py:62
+#: pydantic_translations/_messages.py:61
 msgid "value is not a valid frozenset"
 msgstr "value is not a valid frozenset"
 
-#: pydantic_translations/_messages.py:63
+#: pydantic_translations/_messages.py:62
 msgid "value is not a valid hashable"
 msgstr "value is not a valid hashable"
 
-#: pydantic_translations/_messages.py:64
+#: pydantic_translations/_messages.py:63
 #, python-brace-format
 msgid "{value} is not a valid IntEnum instance"
 msgstr "{value} is not a valid IntEnum instance"
 
-#: pydantic_translations/_messages.py:65
+#: pydantic_translations/_messages.py:64
 msgid "value is not a valid integer"
 msgstr "value is not a valid integer"
 
-#: pydantic_translations/_messages.py:66
+#: pydantic_translations/_messages.py:65
 msgid "value is not a valid iterable"
 msgstr "value is not a valid iterable"
 
-#: pydantic_translations/_messages.py:67
+#: pydantic_translations/_messages.py:66
 msgid "JSON object must be str, bytes or bytearray"
 msgstr "JSON object must be str, bytes or bytearray"
 
-#: pydantic_translations/_messages.py:68
+#: pydantic_translations/_messages.py:67
 msgid "value is not a valid list"
 msgstr "value is not a valid list"
 
-#: pydantic_translations/_messages.py:69
+#: pydantic_translations/_messages.py:68
 msgid "value is not none"
 msgstr "value is not none"
 
-#: pydantic_translations/_messages.py:70
+#: pydantic_translations/_messages.py:69
 msgid "none is not an allowed value"
 msgstr "none is not an allowed value"
 
-#: pydantic_translations/_messages.py:71
+#: pydantic_translations/_messages.py:70
 msgid "value is not None"
 msgstr "value is not None"
 
-#: pydantic_translations/_messages.py:72
+#: pydantic_translations/_messages.py:71
 msgid "value is not a valid path"
 msgstr "value is not a valid path"
 
-#: pydantic_translations/_messages.py:73
+#: pydantic_translations/_messages.py:72
 #, python-brace-format
 msgid ""
 "ensure this value contains valid import path or valid callable: "
@@ -197,84 +197,84 @@ msgstr ""
 "ensure this value contains valid import path or valid callable: "
 "{error_message}"
 
-#: pydantic_translations/_messages.py:74
+#: pydantic_translations/_messages.py:73
 msgid "value is not a valid sequence"
 msgstr "value is not a valid sequence"
 
-#: pydantic_translations/_messages.py:75
+#: pydantic_translations/_messages.py:74
 msgid "value is not a valid set"
 msgstr "value is not a valid set"
 
-#: pydantic_translations/_messages.py:76
+#: pydantic_translations/_messages.py:75
 #, python-brace-format
 msgid "subclass of {expected_class} expected"
 msgstr "subclass of {expected_class} expected"
 
-#: pydantic_translations/_messages.py:77
+#: pydantic_translations/_messages.py:76
 msgid "value is not a valid tuple"
 msgstr "value is not a valid tuple"
 
-#: pydantic_translations/_messages.py:78
+#: pydantic_translations/_messages.py:77
 msgid "value is not a valid uuid"
 msgstr "value is not a valid uuid"
 
-#: pydantic_translations/_messages.py:79
+#: pydantic_translations/_messages.py:78
 #, python-brace-format
 msgid "ensure this value has at most {limit_value} characters"
 msgstr "ensure this value has at most {limit_value} characters"
 
-#: pydantic_translations/_messages.py:80
+#: pydantic_translations/_messages.py:79
 #, python-brace-format
 msgid "ensure this value has at least {limit_value} characters"
 msgstr "ensure this value has at least {limit_value} characters"
 
-#: pydantic_translations/_messages.py:81
+#: pydantic_translations/_messages.py:80
 #, python-brace-format
 msgid "value is not a valid color: {reason}"
 msgstr "value is not a valid color: {reason}"
 
-#: pydantic_translations/_messages.py:82
+#: pydantic_translations/_messages.py:81
 #, python-brace-format
 msgid "unexpected value; permitted: {permitted}"
 msgstr "unexpected value; permitted: {permitted}"
 
-#: pydantic_translations/_messages.py:83
+#: pydantic_translations/_messages.py:82
 msgid "date is not in the future"
 msgstr "date is not in the future"
 
-#: pydantic_translations/_messages.py:84
+#: pydantic_translations/_messages.py:83
 msgid "date is not in the past"
 msgstr "date is not in the past"
 
-#: pydantic_translations/_messages.py:85
+#: pydantic_translations/_messages.py:84
 #, python-brace-format
 msgid "ensure that there are no more than {max_digits} digits in total"
 msgstr "ensure that there are no more than {max_digits} digits in total"
 
-#: pydantic_translations/_messages.py:86
+#: pydantic_translations/_messages.py:85
 #, python-brace-format
 msgid "ensure that there are no more than {decimal_places} decimal places"
 msgstr "ensure that there are no more than {decimal_places} decimal places"
 
+#: pydantic_translations/_messages.py:87
+#, python-brace-format
+msgid ""
+"ensure that there are no more than {whole_digits} digits before the decimal "
+"point"
+msgstr ""
+"ensure that there are no more than {whole_digits} digits before the decimal "
+"point"
+
 #: pydantic_translations/_messages.py:88
 #, python-brace-format
 msgid ""
-"ensure that there are no more than {whole_digits} digits before the decimal "
-"point"
+"No match for discriminator {discriminator_key!r} and value "
+"{discriminator_value!r} (allowed values: {allowed_values})"
 msgstr ""
-"ensure that there are no more than {whole_digits} digits before the decimal "
-"point"
+"No match for discriminator {discriminator_key!r} and value "
+"{discriminator_value!r} (allowed values: {allowed_values})"
 
 #: pydantic_translations/_messages.py:89
-#, python-brace-format
-msgid ""
-"No match for discriminator {discriminator_key!r} and value "
-"{discriminator_value!r} (allowed values: {allowed_values})"
-msgstr ""
-"No match for discriminator {discriminator_key!r} and value "
-"{discriminator_value!r} (allowed values: {allowed_values})"
-
-#: pydantic_translations/_messages.py:90
 #, python-brace-format
 msgid "Discriminator {discriminator_key!r} is missing in value"
 msgstr "Discriminator {discriminator_key!r} is missing in value"
