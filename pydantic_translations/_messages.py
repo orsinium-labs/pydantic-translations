@@ -1,17 +1,18 @@
 from __future__ import annotations
 
-from pathlib import Path
 from types import MappingProxyType
 from typing import Mapping
 
 from l10n import Locales
 
+from ._constants import DEFAULT_LANGUAGE, LOCALES_PATH
 
-locales = Locales(path=Path(__file__).parent / 'locales')
+
+locales = Locales(path=LOCALES_PATH)
 
 
 def _get_without_codes() -> set[str]:
-    loc = locales['en']
+    loc = locales[DEFAULT_LANGUAGE]
     return {
         # type errors
         loc.get('byte type expected'),
@@ -45,7 +46,7 @@ WITHOUT_CODES: frozenset[str] = frozenset(_get_without_codes())
 
 
 def _get_with_codes() -> dict[str, str | tuple[str, ...]]:
-    loc = locales['en']
+    loc = locales[DEFAULT_LANGUAGE]
     return {
         'type_error.arbitrary_type':            loc.get('instance of {expected_arbitrary_type} expected'),
         'type_error.bool':                      loc.get('value is not a valid boolean'),

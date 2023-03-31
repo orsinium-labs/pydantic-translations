@@ -3,25 +3,25 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from functools import lru_cache
-from gettext import gettext
-from typing import TYPE_CHECKING, Literal
+from typing import TYPE_CHECKING
 
+from l10n import Locale, Locales
 from pydantic import ValidationError
 
+from ._constants import DEFAULT_LANGUAGE, LOCALES_PATH
 from ._messages import WITH_CODES
 
 
 if TYPE_CHECKING:
     from pydantic.error_wrappers import ErrorDict
 
-
+locales = Locales(path=LOCALES_PATH)
 REX_TRANSFORM = re.compile(r'\{([a-z_]+?)(\!r)?\}')
-DEFAULT_LOCALE = 'en'
 
 
 @dataclass(frozen=True)
 class Translator:
-    locale: Literal['en']
+    locale: str | Locale
 
     def __enter__(self) -> None:
         return None
@@ -45,7 +45,11 @@ class Translator:
         return result
 
     def maybe_translate_error(self, err: ErrorDict) -> ErrorDict | None:
-        if self.locale == DEFAULT_LOCALE:
+        if isinstance(self.locale, str):
+            locale = locales[self.locale]
+        else:
+            locale = self.locale
+        if locale.language == DEFAULT_LANGUAGE:
             return err
 
         eng_message = err['msg']
@@ -59,7 +63,7 @@ class Translator:
 
         new_msg = _format(
             eng_pattern=eng_pattern,
-            trans_pattern=gettext(eng_pattern),
+            trans_pattern=locale.get(eng_pattern),
             eng_message=eng_message,
         )
         if new_msg is None:
