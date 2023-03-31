@@ -111,16 +111,16 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:53
 msgid "a class is expected"
-msgstr ""
+msgstr "ожидался класс"
 
 #: pydantic_translations/_messages.py:54
 #, python-brace-format
 msgid "instance of {class_name}, tuple or dict expected"
-msgstr ""
+msgstr "ожидалось значение типа {class_name}, кортеж или словать"
 
 #: pydantic_translations/_messages.py:86
 msgid "value is not a valid decimal"
-msgstr ""
+msgstr "значение должно быть десятичным числом"
 
 #: pydantic_translations/_messages.py:56
 msgid "value is not a valid deque"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:57
 msgid "value is not a valid dict"
-msgstr ""
+msgstr "значение должно быть словарём"
 
 #: pydantic_translations/_messages.py:58
 #, python-brace-format
@@ -142,15 +142,15 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:60
 msgid "value is not a valid float"
-msgstr "значение должно быть десятичным числом"
+msgstr "значение должно быть числом с плавающей запятой"
 
 #: pydantic_translations/_messages.py:61
 msgid "value is not a valid frozenset"
-msgstr ""
+msgstr "значение должно быть неизменяемым множеством"
 
 #: pydantic_translations/_messages.py:62
 msgid "value is not a valid hashable"
-msgstr ""
+msgstr "значение должно быть хэшируемым"
 
 #: pydantic_translations/_messages.py:63
 #, python-brace-format
@@ -175,7 +175,7 @@ msgstr "значение должно быть списком"
 
 #: pydantic_translations/_messages.py:68
 msgid "value is not none"
-msgstr ""
+msgstr "значение должно быть None"
 
 #: pydantic_translations/_messages.py:69
 msgid "none is not an allowed value"
@@ -187,7 +187,7 @@ msgstr "значение должно быть None"
 
 #: pydantic_translations/_messages.py:71
 msgid "value is not a valid path"
-msgstr "значение не должно быть корректным путём"
+msgstr "значение должно быть корректным путём"
 
 #: pydantic_translations/_messages.py:72
 #, python-brace-format
@@ -198,20 +198,20 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:73
 msgid "value is not a valid sequence"
-msgstr "значение не должно быть последовательностью"
+msgstr "значение должно быть последовательностью"
 
 #: pydantic_translations/_messages.py:74
 msgid "value is not a valid set"
-msgstr "значение не должно быть множеством"
+msgstr "значение должно быть множеством"
 
 #: pydantic_translations/_messages.py:75
 #, python-brace-format
 msgid "subclass of {expected_class} expected"
-msgstr ""
+msgstr "значение должно быть типа {expected_class}"
 
 #: pydantic_translations/_messages.py:76
 msgid "value is not a valid tuple"
-msgstr "значение не должно быть кортежем"
+msgstr "значение должно быть кортежем"
 
 #: pydantic_translations/_messages.py:77
 msgid "value is not a valid uuid"
@@ -277,12 +277,12 @@ msgstr ""
 #: pydantic_translations/_messages.py:111
 #, python-brace-format
 msgid "ensure this value has at most {limit_value} items"
-msgstr ""
+msgstr "значение должно содержать максимум {limit_value} элементов"
 
 #: pydantic_translations/_messages.py:112
 #, python-brace-format
 msgid "ensure this value has at least {limit_value} items"
-msgstr ""
+msgstr "значение должно содержать как минимум {limit_value} элементов"
 
 #: pydantic_translations/_messages.py:93
 #, python-brace-format
@@ -291,77 +291,77 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:96
 msgid "the list has duplicated items"
-msgstr ""
+msgstr "список содержит совпадающие значения"
 
 #: pydantic_translations/_messages.py:97
 msgid "field required"
-msgstr ""
+msgstr "поле обязательно"
 
 #: pydantic_translations/_messages.py:98
 msgid "ensure this value is a finite number"
-msgstr ""
+msgstr "значение должно быть конечным числом"
 
 #: pydantic_translations/_messages.py:99
 #, python-brace-format
 msgid "ensure this value is greater than or equal to {limit_value}"
-msgstr ""
+msgstr "значение должно быть больше или равно {limit_value}"
 
 #: pydantic_translations/_messages.py:100
 #, python-brace-format
 msgid "ensure this value is greater than {limit_value}"
-msgstr ""
+msgstr "значение должно быть больше {limit_value}"
 
 #: pydantic_translations/_messages.py:101
 #, python-brace-format
 msgid "ensure this value is less than or equal to {limit_value}"
-msgstr ""
+msgstr "значение должно быть меньше или равно {limit_value}"
 
 #: pydantic_translations/_messages.py:102
 #, python-brace-format
 msgid "ensure this value is less than {limit_value}"
-msgstr ""
+msgstr "значение должно быть меньше {limit_value}"
 
 #: pydantic_translations/_messages.py:103
 #, python-brace-format
 msgid "ensure this value is a multiple of {multiple_of}"
-msgstr ""
+msgstr "значение должно быть делиться на {multiple_of}"
 
 #: pydantic_translations/_messages.py:104
 #, python-brace-format
 msgid "path \"{path}\" does not point to a directory"
-msgstr ""
+msgstr "путь \"{path}\" не указывает на директорию"
 
 #: pydantic_translations/_messages.py:105
 #, python-brace-format
 msgid "path \"{path}\" does not point to a file"
-msgstr ""
+msgstr "путь \"{path}\" не указывает на файл"
 
 #: pydantic_translations/_messages.py:106
 #, python-brace-format
 msgid "file or directory at path \"{path}\" does not exist"
-msgstr ""
+msgstr "файл или директория \"{path}\" не существует"
 
 #: pydantic_translations/_messages.py:107
 msgid "card number is not all digits"
-msgstr ""
+msgstr "номер карты может содержать только цифры"
 
 #: pydantic_translations/_messages.py:108
 #, python-brace-format
 msgid "Length for a {brand} card must be {required_length}"
-msgstr ""
+msgstr "длина для карты {brand} должна быть {required_length}"
 
 #: pydantic_translations/_messages.py:109
 msgid "card number is not luhn valid"
-msgstr ""
+msgstr "контрольные цифры номера карты не совпадают"
 
 #: pydantic_translations/_messages.py:110
 msgid "Invalid regular expression"
-msgstr ""
+msgstr "некорректное регулярное выражение"
 
 #: pydantic_translations/_messages.py:113
 #, python-brace-format
 msgid "string does not match regex \"{pattern}\""
-msgstr ""
+msgstr "строка не соответствует регулярному выражению \"{pattern}\""
 
 #: pydantic_translations/_messages.py:114
 #, python-brace-format
