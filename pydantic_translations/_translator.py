@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from functools import lru_cache
+from types import TracebackType
 from typing import TYPE_CHECKING
 
 from l10n import Locale, Locales
@@ -21,15 +22,67 @@ REX_TRANSFORM = re.compile(r'\{([a-z_]+?)(\!r)?\}')
 
 @dataclass(frozen=True)
 class Translator:
+    """Set of functions to translate pydantic errors to the given locale.
+
+    Supported locales:
+
+    * `de`: German.
+    * `en`: English (US).
+    * `es`: Spanish.
+    * `fr`: French.
+    * `it`: Italian.
+    * `nl`: Dutch.
+    * `ru`: Russian.
+
+    Example of using Translator as a context manager:
+
+    ::
+
+        translator = Translator('nl')
+        with translator:
+            User.parse_obj({'name': 'Aragorn'})
+
+    """
     locale: str | Locale
 
-    def __enter__(self) -> None:
-        return None
+    def __enter__(self) -> Translator:
+        return self
 
-    def __exit__(self, *exc_info) -> None:
-        ...
+    def __exit__(
+            self,
+            exc_type: type[BaseException] | None,
+            exc_value: BaseException | None,
+            traceback: TracebackType | None,
+    ) -> None:
+        """Translate pydantic errors raised from the context.
+
+        ::
+
+            translator = Translator('nl')
+            with translator:
+                User.parse_obj({'name': 'Aragorn'})
+
+        """
+        if exc_value is None:
+            return
+        if not isinstance(exc_value, ValidationError):
+            return
+        exc_value = self.translate_exception(exc_value)
+        raise exc_value from None
 
     def translate_exception(self, exc: ValidationError) -> ValidationError:
+        """Translate errors in a pydantic exception.
+
+        ::
+
+            translator = Translator('nl')
+            try:
+                User.parse_obj({'name': 'Aragorn'})
+            except pydantic.ValidationError as exc:
+                exc = translator.translate_exception(exc)
+                raise exc
+
+        """
         errors = [self.translate_error(err) for err in exc.errors()]
         result = ValidationError(
             errors=exc.raw_errors,
@@ -39,14 +92,36 @@ class Translator:
         return result
 
     def translate_error(self, err: ErrorDict) -> ErrorDict:
+        """Translate the error dict.
+
+        If for some reason it cannot be translated
+        (unknown error code, unexpected error message, or unsupported locale),
+        the error dict is returned unchanged.
+
+        ::
+
+            translator = Translator('nl')
+            try:
+                User.parse_obj({'name': 'Aragorn'})
+            except pydantic.ValidationError as exc:
+                err = exc.errors()[0]
+                err = translator.translate_error(err)
+                print(err)
+
+        """
         result = self.maybe_translate_error(err)
         if result is None:
             return err
         return result
 
     def maybe_translate_error(self, err: ErrorDict) -> ErrorDict | None:
+        """Translate the error dict if possible.
+        """
         if isinstance(self.locale, str):
-            locale = locales[self.locale]
+            lang = self.locale.split('-')[0].split('_')[0]
+            locale = locales.get(lang)
+            if locale is None:
+                return None
         else:
             locale = self.locale
         if locale.language == DEFAULT_LANGUAGE:
@@ -74,6 +149,10 @@ class Translator:
 
 
 def _format(eng_pattern: str, trans_pattern: str, eng_message: str) -> str | None:
+    """
+    Parse `eng_message` using `eng_pattern`
+    and substitute extracted values into `trans_pattern`.
+    """
     if '{' not in eng_pattern:
         return trans_pattern
     rex = _compile_pattern(eng_pattern)

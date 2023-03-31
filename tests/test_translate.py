@@ -34,3 +34,15 @@ def test_translator(lang: str, given: object, expected: str | None) -> None:
         assert actual.errors()[0]['msg'] == expected
     else:
         assert expected is None
+
+
+def test_translator__context_manager() -> None:
+    class User(pydantic.BaseModel):
+        name: str
+        age: int = 21
+
+    tr = Translator('ru')
+    with pytest.raises(pydantic.ValidationError) as exc:
+        with tr:
+            User.parse_obj({'name': '', 'age': 'hi'})
+    assert exc.value.errors()[0]['msg'] == 'значение должно быть целым числом'
