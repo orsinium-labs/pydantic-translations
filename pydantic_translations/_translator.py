@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from functools import lru_cache
+from functools import cached_property, lru_cache
 from types import TracebackType
 from typing import TYPE_CHECKING
 
@@ -117,13 +117,9 @@ class Translator:
     def maybe_translate_error(self, err: ErrorDict) -> ErrorDict | None:
         """Translate the error dict if possible.
         """
-        if isinstance(self.locale, str):
-            lang = self.locale.split('-')[0].split('_')[0]
-            locale = locales.get(lang)
-            if locale is None:
-                return None
-        else:
-            locale = self.locale
+        locale = self._locale
+        if locale is None:
+            return None
         if locale.language == DEFAULT_LANGUAGE:
             return err
 
@@ -146,6 +142,13 @@ class Translator:
         result = err.copy()
         result['msg'] = new_msg
         return result
+
+    @cached_property
+    def _locale(self) -> Locale | None:
+        if isinstance(self.locale, str):
+            lang = self.locale.split('-')[0].split('_')[0]
+            return locales.get(lang)
+        return self.locale
 
 
 def _format(eng_pattern: str, trans_pattern: str, eng_message: str) -> str | None:
