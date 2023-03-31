@@ -136,6 +136,13 @@ tasks:
       - install:l10n
     cmds:
       - "{{.L10N_ENV}}/bin/python -m l10n extract {{.CLI_ARGS}}"
+      - msguniq ./locales/de.po -o ./locales/de.po
+      - msguniq ./locales/en.po -o ./locales/en.po
+      - msguniq ./locales/es.po -o ./locales/es.po
+      - msguniq ./locales/fr.po -o ./locales/fr.po
+      - msguniq ./locales/it.po -o ./locales/it.po
+      - msguniq ./locales/nl.po -o ./locales/nl.po
+      - msguniq ./locales/ru.po -o ./locales/ru.po
 
   l10n:compile:
     desc: "generate PO files"
