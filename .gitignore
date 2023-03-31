@@ -1,2 +1,8 @@
+.*_cache/
 __pycache__/
+/.coverage
+/htmlcov/
+/dist/
+/.hypothesis/
 /.task/
+/.venvs/
