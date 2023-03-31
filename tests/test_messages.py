@@ -1,10 +1,12 @@
 from __future__ import annotations
+
+from itertools import chain
 from typing import Iterator
 
-import pytest
-from pydantic_translations._messages import WITH_CODES, WITHOUT_CODES
 import pydantic
-from itertools import chain
+import pytest
+
+from pydantic_translations._messages import WITH_CODES, WITHOUT_CODES
 
 
 def iter_all_subclasses(root: type) -> Iterator[type]:

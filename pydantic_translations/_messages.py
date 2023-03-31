@@ -3,6 +3,7 @@ from __future__ import annotations
 from types import MappingProxyType
 from typing import Mapping
 
+
 # In fact, these errors do have a code but it's not explicitly specified
 # on the error class.
 WITHOUT_CODES: frozenset[str] = frozenset({

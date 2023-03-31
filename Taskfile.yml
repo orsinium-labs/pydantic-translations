@@ -82,7 +82,7 @@ tasks:
     cmds:
       - which gh
       - test {{.CLI_ARGS}}
-      - cat mypy_baseline/__init__.py | grep {{.CLI_ARGS}}
+      - cat pydantic_translations/__init__.py | grep {{.CLI_ARGS}}
       - rm -rf dist/
       - flit build
       - flit publish
@@ -115,7 +115,7 @@ tasks:
     deps:
       - install:lint
     cmds:
-      - "{{.LINT_PYTHON}} -m unify -r -i --quote=\\' {{.CLI_ARGS}} mypy_baseline tests"
+      - "{{.LINT_PYTHON}} -m unify -r -i --quote=\\' {{.CLI_ARGS}} pydantic_translations tests"
   isort:
     desc: "sort imports"
     deps:

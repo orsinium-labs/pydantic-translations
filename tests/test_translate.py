@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from pydantic_translations._translator import _format
 
 

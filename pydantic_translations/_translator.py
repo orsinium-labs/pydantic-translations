@@ -1,12 +1,15 @@
 from __future__ import annotations
+
+import re
 from dataclasses import dataclass
 from functools import lru_cache
-import re
+from gettext import gettext
 from typing import TYPE_CHECKING, Literal
 
-from ._messages import WITH_CODES
-from gettext import gettext
 from pydantic import ValidationError
+
+from ._messages import WITH_CODES
+
 
 if TYPE_CHECKING:
     from pydantic.error_wrappers import ErrorDict
