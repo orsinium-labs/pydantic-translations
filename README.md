@@ -88,8 +88,8 @@ tr = Translator(locale)
 
 ## Contributors
 
-1. The original error messages provided by @samuelcolvin and [pydantic contributors](https://github.com/pydantic/pydantic/graphs/contributors).
-1. The Russian translation is provided by @orsinium.
+1. The original error messages provided by [@samuelcolvin](https://github.com/samuelcolvin) and [pydantic contributors](https://github.com/pydantic/pydantic/graphs/contributors).
+1. The Russian translation is provided by [@orsinium](https://github.com/orsinium).
 1. The German, Spanish, French, Italian, and Dutch translations are provided by [Andovar](https://andovar.com/) translation agency.
 
 Minor corrections and improvements are provided by [the project contributors](https://github.com/orsinium-labs/pydantic-translations/graphs/contributors).
