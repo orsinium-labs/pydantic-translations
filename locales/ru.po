@@ -17,7 +17,7 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:18
 msgid "byte type expected"
-msgstr ""
+msgstr "ожидалась последовательность байт"
 
 #: pydantic_translations/_messages.py:19
 msgid "str type expected"
@@ -29,7 +29,7 @@ msgstr "значение не может быть интерпретирован
 
 #: pydantic_translations/_messages.py:23
 msgid "could not parse value and unit from byte string"
-msgstr ""
+msgstr "не получается достать значение и единицу измерения из байтовой строки"
 
 #: pydantic_translations/_messages.py:90
 msgid "extra fields not permitted"
@@ -41,7 +41,7 @@ msgstr "некорректный формат даты"
 
 #: pydantic_translations/_messages.py:25
 msgid "invalid datetime format"
-msgstr ""
+msgstr "некорректный формат даты и времени"
 
 #: pydantic_translations/_messages.py:26
 msgid "invalid duration format"
@@ -49,7 +49,7 @@ msgstr "некорректный формат продолжительности
 
 #: pydantic_translations/_messages.py:27
 msgid "Invalid JSON"
-msgstr ""
+msgstr "некорректный JSON"
 
 #: pydantic_translations/_messages.py:28
 msgid "invalid time format"
@@ -61,7 +61,7 @@ msgstr "некорректный формат адреса электронно�
 
 #: pydantic_translations/_messages.py:30
 msgid "value is not a valid IPv4 address"
-msgstr ""
+msgstr "значение должно быть корректным IPv4 адресом"
 
 #: pydantic_translations/_messages.py:31
 msgid "value is not a valid IPv4 interface"
@@ -69,11 +69,11 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:32
 msgid "value is not a valid IPv4 network"
-msgstr ""
+msgstr "значение должно быть корректной IPv4 сетью"
 
 #: pydantic_translations/_messages.py:33
 msgid "value is not a valid IPv4 or IPv6 address"
-msgstr ""
+msgstr "значение должно быть корректным IPv4 или IPv6 адресом"
 
 #: pydantic_translations/_messages.py:34
 msgid "value is not a valid IPv4 or IPv6 interface"
@@ -81,11 +81,11 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:35
 msgid "value is not a valid IPv4 or IPv6 network"
-msgstr ""
+msgstr "значение должно быть корректной IPv4 или IPv6 сетью"
 
 #: pydantic_translations/_messages.py:36
 msgid "value is not a valid IPv6 address"
-msgstr ""
+msgstr "значение должно быть корректным IPv6 адресом"
 
 #: pydantic_translations/_messages.py:37
 msgid "value is not a valid IPv6 interface"
@@ -93,21 +93,21 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:38
 msgid "value is not a valid IPv6 network"
-msgstr ""
+msgstr "значение должно быть корректной IPv6 сетью"
 
 #: pydantic_translations/_messages.py:50
 #, python-brace-format
 msgid "instance of {expected_arbitrary_type} expected"
-msgstr ""
+msgid "значение должно быть типа {expected_arbitrary_type}"
 
 #: pydantic_translations/_messages.py:51
 msgid "value is not a valid boolean"
-msgstr ""
+msgstr "значение должно быть логическим типом"
 
 #: pydantic_translations/_messages.py:52
 #, python-brace-format
 msgid "{value} is not callable"
-msgstr ""
+msgstr "{value} не является вызываемым типом"
 
 #: pydantic_translations/_messages.py:53
 msgid "a class is expected"
@@ -124,7 +124,7 @@ msgstr "значение должно быть десятичным числом
 
 #: pydantic_translations/_messages.py:56
 msgid "value is not a valid deque"
-msgstr ""
+msgstr "значение должно быть двухсторонней очередью"
 
 #: pydantic_translations/_messages.py:57
 msgid "value is not a valid dict"
@@ -167,7 +167,7 @@ msgstr "значение должно быть итерируемым"
 
 #: pydantic_translations/_messages.py:66
 msgid "JSON object must be str, bytes or bytearray"
-msgstr ""
+msgstr "JSON объект должен быть строкой, байтами или массивом байт"
 
 #: pydantic_translations/_messages.py:67
 msgid "value is not a valid list"
@@ -207,7 +207,7 @@ msgstr "значение должно быть множеством"
 #: pydantic_translations/_messages.py:75
 #, python-brace-format
 msgid "subclass of {expected_class} expected"
-msgstr "значение должно быть типа {expected_class}"
+msgstr "значение должно быть подклассом {expected_class}"
 
 #: pydantic_translations/_messages.py:76
 msgid "value is not a valid tuple"
@@ -215,17 +215,17 @@ msgstr "значение должно быть кортежем"
 
 #: pydantic_translations/_messages.py:77
 msgid "value is not a valid uuid"
-msgstr ""
+msgstr "значение должно быть корректным UUID"
 
 #: pydantic_translations/_messages.py:78
 #, python-brace-format
 msgid "ensure this value has at most {limit_value} characters"
-msgstr ""
+msgstr "значение должно содержать не больше {limit_value} символов"
 
 #: pydantic_translations/_messages.py:79
 #, python-brace-format
 msgid "ensure this value has at least {limit_value} characters"
-msgstr ""
+msgstr "значение должно содержать как минимум {limit_value} символов"
 
 #: pydantic_translations/_messages.py:80
 #, python-brace-format
@@ -366,7 +366,7 @@ msgstr "строка не соответствует регулярному вы
 #: pydantic_translations/_messages.py:114
 #, python-brace-format
 msgid "wrong tuple length {actual_length}, expected {expected_length}"
-msgstr ""
+msgstr "некорректная длина кортежа {actual_length}, ожидалась длина {expected_length}"
 
 #: pydantic_translations/_messages.py:115
 #, python-brace-format
@@ -383,11 +383,11 @@ msgstr ""
 
 #: pydantic_translations/_messages.py:117
 msgid "URL port invalid, port cannot exceed 65535"
-msgstr ""
+msgstr "некорретный URL порт, номер порта должен быть не больше 65535"
 
 #: pydantic_translations/_messages.py:118
 msgid "invalid or missing URL scheme"
-msgstr ""
+msgstr "URL должен содержать корректную схему"
 
 #: pydantic_translations/_messages.py:118
 msgid "URL scheme not permitted"
@@ -400,4 +400,4 @@ msgstr ""
 #: pydantic_translations/_messages.py:120
 #, python-brace-format
 msgid "uuid version {required_version} expected"
-msgstr ""
+msgstr "значение должно быть UUID версии {required_version}"
