@@ -98,7 +98,7 @@ msgstr "значение должно быть корректной IPv6 сет�
 #: pydantic_translations/_messages.py:50
 #, python-brace-format
 msgid "instance of {expected_arbitrary_type} expected"
-msgid "значение должно быть типа {expected_arbitrary_type}"
+msgstr "значение должно быть типа {expected_arbitrary_type}"
 
 #: pydantic_translations/_messages.py:51
 msgid "value is not a valid boolean"
