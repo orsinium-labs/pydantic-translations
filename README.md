@@ -6,11 +6,11 @@ Translations for pydantic errors.
 
 Currently, we have translated pydantic v1.10.2 errors to the following languages:
 
-* `de`: German. 0/87.
-* `es`: Spanish. 0/87.
-* `fr`: French. 0/87.
-* `it`: Italian. 0/87.
-* `nl`: Dutch. 0/87.
+* `de`: German. 87/87.
+* `es`: Spanish. 87/87.
+* `fr`: French. 87/87.
+* `it`: Italian. 87/87.
+* `nl`: Dutch. 87/87.
 * `ru`: Russian. 70/87.
 
 Need more languages? Contributions are welcome!

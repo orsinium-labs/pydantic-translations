@@ -1,402 +1,389 @@
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pydantic-translations 0.0.0\n"
-"Report-Msgid-Bugs-To: git@orsinium.dev\n"
-"POT-Creation-Date: 2023-03-31 10:36+0200\n"
-"PO-Revision-Date: 2023-03-31 12:14+0200\n"
-"Last-Translator: Gram <git@orsinium.dev>\n"
-"Language-Team: Gram <git@orsinium.dev>\n"
-"Language: es\n"
+"Language: es-ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: l10n 0.1.0\n"
-
-#: pydantic_translations/_messages.py:18
-msgid "byte type expected"
-msgstr ""
-
-#: pydantic_translations/_messages.py:19
-msgid "str type expected"
-msgstr ""
-
-#: pydantic_translations/_messages.py:20
-msgid "value could not be parsed to a boolean"
-msgstr ""
-
-#: pydantic_translations/_messages.py:23
-msgid "could not parse value and unit from byte string"
-msgstr ""
-
-#: pydantic_translations/_messages.py:90
-msgid "extra fields not permitted"
-msgstr ""
-
-#: pydantic_translations/_messages.py:24
-msgid "invalid date format"
-msgstr ""
-
-#: pydantic_translations/_messages.py:25
-msgid "invalid datetime format"
-msgstr ""
-
-#: pydantic_translations/_messages.py:26
-msgid "invalid duration format"
-msgstr ""
-
-#: pydantic_translations/_messages.py:27
-msgid "Invalid JSON"
-msgstr ""
-
-#: pydantic_translations/_messages.py:28
-msgid "invalid time format"
-msgstr ""
-
-#: pydantic_translations/_messages.py:29
-msgid "value is not a valid email address"
-msgstr ""
-
-#: pydantic_translations/_messages.py:30
-msgid "value is not a valid IPv4 address"
-msgstr ""
-
-#: pydantic_translations/_messages.py:31
-msgid "value is not a valid IPv4 interface"
-msgstr ""
-
-#: pydantic_translations/_messages.py:32
-msgid "value is not a valid IPv4 network"
-msgstr ""
-
-#: pydantic_translations/_messages.py:33
-msgid "value is not a valid IPv4 or IPv6 address"
-msgstr ""
-
-#: pydantic_translations/_messages.py:34
-msgid "value is not a valid IPv4 or IPv6 interface"
-msgstr ""
-
-#: pydantic_translations/_messages.py:35
-msgid "value is not a valid IPv4 or IPv6 network"
-msgstr ""
-
-#: pydantic_translations/_messages.py:36
-msgid "value is not a valid IPv6 address"
-msgstr ""
-
-#: pydantic_translations/_messages.py:37
-msgid "value is not a valid IPv6 interface"
-msgstr ""
-
-#: pydantic_translations/_messages.py:38
-msgid "value is not a valid IPv6 network"
-msgstr ""
-
-#: pydantic_translations/_messages.py:50
-#, python-brace-format
-msgid "instance of {expected_arbitrary_type} expected"
-msgstr ""
-
-#: pydantic_translations/_messages.py:51
-msgid "value is not a valid boolean"
-msgstr ""
-
-#: pydantic_translations/_messages.py:52
-#, python-brace-format
-msgid "{value} is not callable"
-msgstr ""
-
-#: pydantic_translations/_messages.py:53
-msgid "a class is expected"
-msgstr ""
-
-#: pydantic_translations/_messages.py:54
-#, python-brace-format
-msgid "instance of {class_name}, tuple or dict expected"
-msgstr ""
-
-#: pydantic_translations/_messages.py:86
-msgid "value is not a valid decimal"
-msgstr ""
-
-#: pydantic_translations/_messages.py:56
-msgid "value is not a valid deque"
-msgstr ""
-
-#: pydantic_translations/_messages.py:57
-msgid "value is not a valid dict"
-msgstr ""
+"X-Generator: Phrase (phrase.com)\n"
 
 #: pydantic_translations/_messages.py:58
 #, python-brace-format
 msgid "{value} is not a valid Enum instance"
-msgstr ""
-
-#: pydantic_translations/_messages.py:59
-#, python-brace-format
-msgid "value is not a valid enumeration member; permitted: {permitted}"
-msgstr ""
-
-#: pydantic_translations/_messages.py:60
-msgid "value is not a valid float"
-msgstr ""
-
-#: pydantic_translations/_messages.py:61
-msgid "value is not a valid frozenset"
-msgstr ""
-
-#: pydantic_translations/_messages.py:62
-msgid "value is not a valid hashable"
-msgstr ""
+msgstr "{value} no es una instancia de Enum válida"
 
 #: pydantic_translations/_messages.py:63
 #, python-brace-format
 msgid "{value} is not a valid IntEnum instance"
-msgstr ""
+msgstr "{value} no es una instancia de IntEnum válida"
 
-#: pydantic_translations/_messages.py:64
-msgid "value is not a valid integer"
-msgstr ""
-
-#: pydantic_translations/_messages.py:65
-msgid "value is not a valid iterable"
-msgstr ""
-
-#: pydantic_translations/_messages.py:66
-msgid "JSON object must be str, bytes or bytearray"
-msgstr ""
-
-#: pydantic_translations/_messages.py:67
-msgid "value is not a valid list"
-msgstr ""
-
-#: pydantic_translations/_messages.py:68
-msgid "value is not none"
-msgstr ""
-
-#: pydantic_translations/_messages.py:69
-msgid "none is not an allowed value"
-msgstr ""
-
-#: pydantic_translations/_messages.py:70
-msgid "value is not None"
-msgstr ""
-
-#: pydantic_translations/_messages.py:71
-msgid "value is not a valid path"
-msgstr ""
-
-#: pydantic_translations/_messages.py:72
+#: pydantic_translations/_messages.py:52
 #, python-brace-format
-msgid ""
-"ensure this value contains valid import path or valid callable: "
-"{error_message}"
-msgstr ""
+msgid "{value} is not callable"
+msgstr "{value} no es invocable"
 
-#: pydantic_translations/_messages.py:73
-msgid "value is not a valid sequence"
-msgstr ""
+#: pydantic_translations/_messages.py:53
+msgid "a class is expected"
+msgstr "se espera una clase"
 
-#: pydantic_translations/_messages.py:74
-msgid "value is not a valid set"
-msgstr ""
+#: pydantic_translations/_messages.py:18
+msgid "byte type expected"
+msgstr "se espera un tipo de byte"
 
-#: pydantic_translations/_messages.py:75
-#, python-brace-format
-msgid "subclass of {expected_class} expected"
-msgstr ""
+#: pydantic_translations/_messages.py:107
+msgid "card number is not all digits"
+msgstr "el número de tarjeta no tiene todos los dígitos"
 
-#: pydantic_translations/_messages.py:76
-msgid "value is not a valid tuple"
-msgstr ""
-
-#: pydantic_translations/_messages.py:77
-msgid "value is not a valid uuid"
-msgstr ""
-
-#: pydantic_translations/_messages.py:78
-#, python-brace-format
-msgid "ensure this value has at most {limit_value} characters"
-msgstr ""
-
-#: pydantic_translations/_messages.py:79
-#, python-brace-format
-msgid "ensure this value has at least {limit_value} characters"
-msgstr ""
-
-#: pydantic_translations/_messages.py:80
-#, python-brace-format
-msgid "value is not a valid color: {reason}"
-msgstr ""
-
-#: pydantic_translations/_messages.py:81
-#, python-brace-format
-msgid "unexpected value; permitted: {permitted}"
-msgstr ""
-
-#: pydantic_translations/_messages.py:82
-msgid "date is not in the future"
-msgstr ""
-
-#: pydantic_translations/_messages.py:83
-msgid "date is not in the past"
-msgstr ""
-
-#: pydantic_translations/_messages.py:84
-#, python-brace-format
-msgid "ensure that there are no more than {max_digits} digits in total"
-msgstr ""
-
-#: pydantic_translations/_messages.py:85
-#, python-brace-format
-msgid "ensure that there are no more than {decimal_places} decimal places"
-msgstr ""
-
-#: pydantic_translations/_messages.py:87
-#, python-brace-format
-msgid ""
-"ensure that there are no more than {whole_digits} digits before the decimal "
-"point"
-msgstr ""
-
-#: pydantic_translations/_messages.py:88
-#, python-brace-format
-msgid ""
-"No match for discriminator {discriminator_key!r} and value "
-"{discriminator_value!r} (allowed values: {allowed_values})"
-msgstr ""
-
-#: pydantic_translations/_messages.py:89
-#, python-brace-format
-msgid "Discriminator {discriminator_key!r} is missing in value"
-msgstr ""
-
-#: pydantic_translations/_messages.py:111
-#, python-brace-format
-msgid "ensure this value has at most {limit_value} items"
-msgstr ""
-
-#: pydantic_translations/_messages.py:112
-#, python-brace-format
-msgid "ensure this value has at least {limit_value} items"
-msgstr ""
+#: pydantic_translations/_messages.py:109
+msgid "card number is not luhn valid"
+msgstr "el número de tarjeta no tiene un número de Luhn válido"
 
 #: pydantic_translations/_messages.py:93
 #, python-brace-format
 msgid "could not interpret byte unit: {unit}"
-msgstr ""
+msgstr "no se ha podido interpretar la unidad de byte: {unit}"
 
-#: pydantic_translations/_messages.py:96
-msgid "the list has duplicated items"
-msgstr ""
+#: pydantic_translations/_messages.py:23
+msgid "could not parse value and unit from byte string"
+msgstr "no se ha podido analizar el valor y la unidad de la cadena de bytes"
 
-#: pydantic_translations/_messages.py:97
-msgid "field required"
-msgstr ""
+#: pydantic_translations/_messages.py:82
+msgid "date is not in the future"
+msgstr "la fecha no es futura"
+
+#: pydantic_translations/_messages.py:83
+msgid "date is not in the past"
+msgstr "la fecha no es anterior"
+
+#: pydantic_translations/_messages.py:89
+#, python-brace-format
+msgid "Discriminator {discriminator_key!r} is missing in value"
+msgstr "El discriminador {discriminator_key!r} no tiene valor"
+
+#: pydantic_translations/_messages.py:85
+#, python-brace-format
+msgid "ensure that there are no more than {decimal_places} decimal places"
+msgstr "asegúrate de que no hay más de {decimal_places} decimales"
+
+#: pydantic_translations/_messages.py:84
+#, python-brace-format
+msgid "ensure that there are no more than {max_digits} digits in total"
+msgstr "asegúrate de que no hay más de {max_digits} dígitos en total"
+
+#: pydantic_translations/_messages.py:87
+#, python-brace-format
+msgid "ensure that there are no more than {whole_digits} digits before the decimal point"
+msgstr "asegúrate de que no hay más de {whole_digits} dígitos antes del punto decimal"
+
+#: pydantic_translations/_messages.py:72
+#, python-brace-format
+msgid "ensure this value contains valid import path or valid callable: {error_message}"
+msgstr "asegúrate de que el valor contiene una ruta de importación válida o un invocable válido: {error_message}"
+
+#: pydantic_translations/_messages.py:79
+#, python-brace-format
+msgid "ensure this value has at least {limit_value} characters"
+msgstr "asegúrate de que el valor tiene al menos {limit_value} caracteres"
+
+#: pydantic_translations/_messages.py:112
+#, python-brace-format
+msgid "ensure this value has at least {limit_value} items"
+msgstr "asegúrate de que el valor tiene al menos {limit_value} elementos"
+
+#: pydantic_translations/_messages.py:78
+#, python-brace-format
+msgid "ensure this value has at most {limit_value} characters"
+msgstr "asegúrate de que el valor tiene como máximo {limit_value} caracteres"
+
+#: pydantic_translations/_messages.py:111
+#, python-brace-format
+msgid "ensure this value has at most {limit_value} items"
+msgstr "asegúrate de que el valor tiene como máximo {limit_value} elementos"
 
 #: pydantic_translations/_messages.py:98
 msgid "ensure this value is a finite number"
-msgstr ""
-
-#: pydantic_translations/_messages.py:99
-#, python-brace-format
-msgid "ensure this value is greater than or equal to {limit_value}"
-msgstr ""
-
-#: pydantic_translations/_messages.py:100
-#, python-brace-format
-msgid "ensure this value is greater than {limit_value}"
-msgstr ""
-
-#: pydantic_translations/_messages.py:101
-#, python-brace-format
-msgid "ensure this value is less than or equal to {limit_value}"
-msgstr ""
-
-#: pydantic_translations/_messages.py:102
-#, python-brace-format
-msgid "ensure this value is less than {limit_value}"
-msgstr ""
+msgstr "asegúrate de que el valor es un número finito"
 
 #: pydantic_translations/_messages.py:103
 #, python-brace-format
 msgid "ensure this value is a multiple of {multiple_of}"
-msgstr ""
+msgstr "asegúrate de que el valor es un múltiplo de {multiple_of}"
 
-#: pydantic_translations/_messages.py:104
+#: pydantic_translations/_messages.py:100
 #, python-brace-format
-msgid "path \"{path}\" does not point to a directory"
-msgstr ""
+msgid "ensure this value is greater than {limit_value}"
+msgstr "asegúrate de que el valor es mayor que {limit_value}"
 
-#: pydantic_translations/_messages.py:105
+#: pydantic_translations/_messages.py:99
 #, python-brace-format
-msgid "path \"{path}\" does not point to a file"
-msgstr ""
+msgid "ensure this value is greater than or equal to {limit_value}"
+msgstr "asegúrate de que el valor es mayor o igual a {limit_value}"
+
+#: pydantic_translations/_messages.py:102
+#, python-brace-format
+msgid "ensure this value is less than {limit_value}"
+msgstr "asegúrate de que el valor es menor que {limit_value}"
+
+#: pydantic_translations/_messages.py:101
+#, python-brace-format
+msgid "ensure this value is less than or equal to {limit_value}"
+msgstr "asegúrate de que el valor es menor o igual a {limit_value}"
+
+#: pydantic_translations/_messages.py:90
+msgid "extra fields not permitted"
+msgstr "campos adicionales no permitidos"
+
+#: pydantic_translations/_messages.py:97
+msgid "field required"
+msgstr "campo obligatorio"
 
 #: pydantic_translations/_messages.py:106
 #, python-brace-format
 msgid "file or directory at path \"{path}\" does not exist"
-msgstr ""
+msgstr "el archivo o directorio en la ruta \"{path}\" no existe"
 
-#: pydantic_translations/_messages.py:107
-msgid "card number is not all digits"
-msgstr ""
+#: pydantic_translations/_messages.py:54
+#, python-brace-format
+msgid "instance of {class_name}, tuple or dict expected"
+msgstr "instancia de {class_name}, se esperaba una tupla o un dict"
+
+#: pydantic_translations/_messages.py:50
+#, python-brace-format
+msgid "instance of {expected_arbitrary_type} expected"
+msgstr "se esperaba instancia de {expected_arbitrary_type}"
+
+#: pydantic_translations/_messages.py:24
+msgid "invalid date format"
+msgstr "formato de fecha no válido"
+
+#: pydantic_translations/_messages.py:25
+msgid "invalid datetime format"
+msgstr "formato de fecha y hora no válido"
+
+#: pydantic_translations/_messages.py:26
+msgid "invalid duration format"
+msgstr "formato de duración no válido"
+
+#: pydantic_translations/_messages.py:27
+msgid "Invalid JSON"
+msgstr "JSON no válido"
+
+#: pydantic_translations/_messages.py:118
+msgid "invalid or missing URL scheme"
+msgstr "esquema de URL no válido o inexistente"
+
+#: pydantic_translations/_messages.py:110
+msgid "Invalid regular expression"
+msgstr "Expresión regular no válida"
+
+#: pydantic_translations/_messages.py:28
+msgid "invalid time format"
+msgstr "formato de hora no válido"
+
+#: pydantic_translations/_messages.py:66
+msgid "JSON object must be str, bytes or bytearray"
+msgstr "El objeto JSON debe ser str, bytes o bytearray"
 
 #: pydantic_translations/_messages.py:108
 #, python-brace-format
 msgid "Length for a {brand} card must be {required_length}"
-msgstr ""
+msgstr "La longitud de una tarjeta {brand} debe ser {required_length}"
 
-#: pydantic_translations/_messages.py:109
-msgid "card number is not luhn valid"
-msgstr ""
+#: pydantic_translations/_messages.py:88
+#, python-brace-format
+msgid "No match for discriminator {discriminator_key!r} and value {discriminator_value!r} (allowed values: {allowed_values})"
+msgstr "No hay coincidencia para el discriminador {discriminator_key!r} y el valor {discriminator_value!r} (valores permitidos: {allowed_values})"
 
-#: pydantic_translations/_messages.py:110
-msgid "Invalid regular expression"
-msgstr ""
+#: pydantic_translations/_messages.py:69
+msgid "none is not an allowed value"
+msgstr "ninguno no es un valor permitido"
+
+#: pydantic_translations/_messages.py:104
+#, python-brace-format
+msgid "path \"{path}\" does not point to a directory"
+msgstr "la ruta \"{path}\" no apunta a un directorio"
+
+#: pydantic_translations/_messages.py:105
+#, python-brace-format
+msgid "path \"{path}\" does not point to a file"
+msgstr "la ruta \"{path}\" no apunta a un archivo"
+
+#: pydantic_translations/_messages.py:19
+msgid "str type expected"
+msgstr "se esperaba un tipo str"
 
 #: pydantic_translations/_messages.py:113
 #, python-brace-format
 msgid "string does not match regex \"{pattern}\""
-msgstr ""
+msgstr "la cadena no coincide con la expresión regular \"{pattern}\""
 
-#: pydantic_translations/_messages.py:114
+#: pydantic_translations/_messages.py:75
 #, python-brace-format
-msgid "wrong tuple length {actual_length}, expected {expected_length}"
-msgstr ""
+msgid "subclass of {expected_class} expected"
+msgstr "se esperaba una subclase de {expected_class}"
+
+#: pydantic_translations/_messages.py:96
+msgid "the list has duplicated items"
+msgstr "la lista tiene elementos duplicados"
+
+#: pydantic_translations/_messages.py:81
+#, python-brace-format
+msgid "unexpected value; permitted: {permitted}"
+msgstr "valor inesperado; el permitido es: {permitted}"
+
+#: pydantic_translations/_messages.py:116
+msgid "URL host invalid"
+msgstr "URL del remitente no válida"
+
+#: pydantic_translations/_messages.py:116
+msgid "URL host invalid, top level domain required"
+msgstr "URL del remitente no válida, se requiere dominio de nivel superior"
 
 #: pydantic_translations/_messages.py:115
 #, python-brace-format
 msgid "URL invalid, extra characters found after valid URL: {extra!r}"
-msgstr ""
-
-#: pydantic_translations/_messages.py:116
-msgid "URL host invalid"
-msgstr ""
-
-#: pydantic_translations/_messages.py:116
-msgid "URL host invalid, top level domain required"
-msgstr ""
+msgstr "URL no válida, se han encontrado caracteres adicionales después de la URL válida: {extra!r}"
 
 #: pydantic_translations/_messages.py:117
 msgid "URL port invalid, port cannot exceed 65535"
-msgstr ""
-
-#: pydantic_translations/_messages.py:118
-msgid "invalid or missing URL scheme"
-msgstr ""
+msgstr "Puerto de URL no válido, no puede exceder 65535"
 
 #: pydantic_translations/_messages.py:118
 msgid "URL scheme not permitted"
-msgstr ""
+msgstr "Esquema de URL no permitido"
 
 #: pydantic_translations/_messages.py:119
 msgid "userinfo required in URL but missing"
-msgstr ""
+msgstr "se requiere Userinfo en la URL pero no se encuentra"
 
 #: pydantic_translations/_messages.py:120
 #, python-brace-format
 msgid "uuid version {required_version} expected"
-msgstr ""
+msgstr "se esperaba una versión de uuid {required_version}"
+
+#: pydantic_translations/_messages.py:20
+msgid "value could not be parsed to a boolean"
+msgstr "no se ha podido convertir en un valor booleano"
+
+#: pydantic_translations/_messages.py:51
+msgid "value is not a valid boolean"
+msgstr "el valor no es un booleano válido"
+
+#: pydantic_translations/_messages.py:80
+#, python-brace-format
+msgid "value is not a valid color: {reason}"
+msgstr "el valor no es un color válido: {reason}"
+
+#: pydantic_translations/_messages.py:86
+msgid "value is not a valid decimal"
+msgstr "el valor no es un decimal válido"
+
+#: pydantic_translations/_messages.py:56
+msgid "value is not a valid deque"
+msgstr "el valor no es un deque válido"
+
+#: pydantic_translations/_messages.py:57
+msgid "value is not a valid dict"
+msgstr "el valor no es un dict válido"
+
+#: pydantic_translations/_messages.py:29
+msgid "value is not a valid email address"
+msgstr "el valor no es una dirección de correo electrónico válida"
+
+#: pydantic_translations/_messages.py:59
+#, python-brace-format
+msgid "value is not a valid enumeration member; permitted: {permitted}"
+msgstr "el valor no es un miembro válido de la enumeración; el permitido es: {permitted}"
+
+#: pydantic_translations/_messages.py:60
+msgid "value is not a valid float"
+msgstr "el valor no es un flotante válido"
+
+#: pydantic_translations/_messages.py:61
+msgid "value is not a valid frozenset"
+msgstr "el valor no es un frozenset válido"
+
+#: pydantic_translations/_messages.py:62
+msgid "value is not a valid hashable"
+msgstr "el valor no es un hashable válido"
+
+#: pydantic_translations/_messages.py:64
+msgid "value is not a valid integer"
+msgstr "el valor no es un entero válido"
+
+#: pydantic_translations/_messages.py:30
+msgid "value is not a valid IPv4 address"
+msgstr "el valor no es una dirección IPv4 válida"
+
+#: pydantic_translations/_messages.py:31
+msgid "value is not a valid IPv4 interface"
+msgstr "el valor no es una interfaz IPv4 válida"
+
+#: pydantic_translations/_messages.py:32
+msgid "value is not a valid IPv4 network"
+msgstr "el valor no es una red IPv4 válida"
+
+#: pydantic_translations/_messages.py:33
+msgid "value is not a valid IPv4 or IPv6 address"
+msgstr "el valor no es una dirección IPv4 o IPv6 válida"
+
+#: pydantic_translations/_messages.py:34
+msgid "value is not a valid IPv4 or IPv6 interface"
+msgstr "el valor no es una interfaz IPv4 o IPv6 válida"
+
+#: pydantic_translations/_messages.py:35
+msgid "value is not a valid IPv4 or IPv6 network"
+msgstr "el valor no es una red IPv4 o IPv6 válida"
+
+#: pydantic_translations/_messages.py:36
+msgid "value is not a valid IPv6 address"
+msgstr "el valor no es una dirección IPv6 válida"
+
+#: pydantic_translations/_messages.py:37
+msgid "value is not a valid IPv6 interface"
+msgstr "el valor no es una interfaz IPv6 válida"
+
+#: pydantic_translations/_messages.py:38
+msgid "value is not a valid IPv6 network"
+msgstr "el valor no es una red IPv6 válida"
+
+#: pydantic_translations/_messages.py:65
+msgid "value is not a valid iterable"
+msgstr "el valor no es un iterable válido"
+
+#: pydantic_translations/_messages.py:67
+msgid "value is not a valid list"
+msgstr "el valor no es una lista válida"
+
+#: pydantic_translations/_messages.py:71
+msgid "value is not a valid path"
+msgstr "el valor no es una ruta válida"
+
+#: pydantic_translations/_messages.py:73
+msgid "value is not a valid sequence"
+msgstr "el valor no es una secuencia válida"
+
+#: pydantic_translations/_messages.py:74
+msgid "value is not a valid set"
+msgstr "el valor no es un conjunto válido"
+
+#: pydantic_translations/_messages.py:76
+msgid "value is not a valid tuple"
+msgstr "el valor no es una tupla válida"
+
+#: pydantic_translations/_messages.py:77
+msgid "value is not a valid uuid"
+msgstr "el valor no es un uuid válido"
+
+#: pydantic_translations/_messages.py:68
+msgid "value is not none"
+msgstr "el valor no es ninguno"
+
+#: pydantic_translations/_messages.py:70
+msgid "value is not None"
+msgstr "el valor no es Ninguno"
+
+#: pydantic_translations/_messages.py:114
+#, python-brace-format
+msgid "wrong tuple length {actual_length}, expected {expected_length}"
+msgstr "longitud de tupla no correcta: {actual_length}; la esperada es {expected_length}"
