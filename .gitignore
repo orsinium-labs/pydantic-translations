@@ -7,4 +7,3 @@ __pycache__/
 /.hypothesis/
 /.task/
 /.venvs/
-/pydantic_translations/locales/
