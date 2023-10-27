@@ -11,7 +11,7 @@ Currently, we have translated pydantic v1.10.2 errors to the following languages
 * `fr`: French. 87/87.
 * `it`: Italian. 87/87.
 * `nl`: Dutch. 87/87.
-* `ru`: Russian. 70/87.
+* `ru`: Russian. 82/87.
 
 Need more languages? Contributions are welcome!
 
