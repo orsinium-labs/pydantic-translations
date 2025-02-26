@@ -1,0 +1,405 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pydantic-translations 0.0.0\n"
+"Report-Msgid-Bugs-To: git@orsinium.dev\n"
+"POT-Creation-Date: 2023-03-31 10:36+0200\n"
+"PO-Revision-Date: 2023-03-31 12:14+0200\n"
+"Last-Translator: Gram <git@orsinium.dev>\n"
+"Language-Team: Gram <git@orsinium.dev>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: l10n 0.1.0\n"
+
+#: pydantic_translations/_messages.py:18
+msgid "byte type expected"
+msgstr "期望字节类型"
+
+#: pydantic_translations/_messages.py:19
+msgid "str type expected"
+msgstr "期望字符串类型"
+
+#: pydantic_translations/_messages.py:20
+msgid "value could not be parsed to a boolean"
+msgstr "无法将值解析为布尔值"
+
+#: pydantic_translations/_messages.py:23
+msgid "could not parse value and unit from byte string"
+msgstr "无法从字节字符串中解析值和单位"
+
+#: pydantic_translations/_messages.py:90
+msgid "extra fields not permitted"
+msgstr "不允许额外字段"
+
+#: pydantic_translations/_messages.py:24
+msgid "invalid date format"
+msgstr "无效的日期格式"
+
+#: pydantic_translations/_messages.py:25
+msgid "invalid datetime format"
+msgstr "无效的日期时间格式"
+
+#: pydantic_translations/_messages.py:26
+msgid "invalid duration format"
+msgstr "无效的持续时间格式"
+
+#: pydantic_translations/_messages.py:27
+msgid "Invalid JSON"
+msgstr "无效的 JSON"
+
+#: pydantic_translations/_messages.py:28
+msgid "invalid time format"
+msgstr "无效的时间格式"
+
+#: pydantic_translations/_messages.py:29
+msgid "value is not a valid email address"
+msgstr "值不是有效的电子邮件地址"
+
+#: pydantic_translations/_messages.py:30
+msgid "value is not a valid IPv4 address"
+msgstr "值不是有效的 IPv4 地址"
+
+#: pydantic_translations/_messages.py:31
+msgid "value is not a valid IPv4 interface"
+msgstr "值不是有效的 IPv4 接口"
+
+#: pydantic_translations/_messages.py:32
+msgid "value is not a valid IPv4 network"
+msgstr "值不是有效的 IPv4 网络"
+
+#: pydantic_translations/_messages.py:33
+msgid "value is not a valid IPv4 or IPv6 address"
+msgstr "值不是有效的 IPv4 或 IPv6 地址"
+
+#: pydantic_translations/_messages.py:34
+msgid "value is not a valid IPv4 or IPv6 interface"
+msgstr "值不是有效的 IPv4 或 IPv6 接口"
+
+#: pydantic_translations/_messages.py:35
+msgid "value is not a valid IPv4 or IPv6 network"
+msgstr "值不是有效的 IPv4 或 IPv6 网络"
+
+#: pydantic_translations/_messages.py:36
+msgid "value is not a valid IPv6 address"
+msgstr "值不是有效的 IPv6 地址"
+
+#: pydantic_translations/_messages.py:37
+msgid "value is not a valid IPv6 interface"
+msgstr "值不是有效的 IPv6 接口"
+
+#: pydantic_translations/_messages.py:38
+msgid "value is not a valid IPv6 network"
+msgstr "值不是有效的 IPv6 网络"
+
+#: pydantic_translations/_messages.py:50
+#, python-brace-format
+msgid "instance of {expected_arbitrary_type} expected"
+msgstr "期望 {expected_arbitrary_type} 的实例"
+
+#: pydantic_translations/_messages.py:51
+msgid "value is not a valid boolean"
+msgstr "值不是有效的布尔值"
+
+#: pydantic_translations/_messages.py:52
+#, python-brace-format
+msgid "{value} is not callable"
+msgstr "{value} 不是可调用的"
+
+#: pydantic_translations/_messages.py:53
+msgid "a class is expected"
+msgstr "期望一个类"
+
+#: pydantic_translations/_messages.py:54
+#, python-brace-format
+msgid "instance of {class_name}, tuple or dict expected"
+msgstr "期望 {class_name} 的实例、元组或字典"
+
+#: pydantic_translations/_messages.py:86
+msgid "value is not a valid decimal"
+msgstr "值不是有效的十进制数"
+
+#: pydantic_translations/_messages.py:56
+msgid "value is not a valid deque"
+msgstr "值不是有效的双端队列"
+
+#: pydantic_translations/_messages.py:57
+msgid "value is not a valid dict"
+msgstr "值不是有效的字典"
+
+#: pydantic_translations/_messages.py:58
+#, python-brace-format
+msgid "{value} is not a valid Enum instance"
+msgstr "{value} 不是有效的枚举实例"
+
+#: pydantic_translations/_messages.py:59
+#, python-brace-format
+msgid "value is not a valid enumeration member; permitted: {permitted}"
+msgstr "值不是有效的枚举成员；允许的值为：{permitted}"
+
+#: pydantic_translations/_messages.py:60
+msgid "value is not a valid float"
+msgstr "值不是有效的浮点数"
+
+#: pydantic_translations/_messages.py:61
+msgid "value is not a valid frozenset"
+msgstr "值不是有效的不可变集合"
+
+#: pydantic_translations/_messages.py:62
+msgid "value is not a valid hashable"
+msgstr "值不是有效的可哈希对象"
+
+#: pydantic_translations/_messages.py:63
+#, python-brace-format
+msgid "{value} is not a valid IntEnum instance"
+msgstr "{value} 不是有效的 IntEnum 实例"
+
+#: pydantic_translations/_messages.py:64
+msgid "value is not a valid integer"
+msgstr "值不是有效的整数"
+
+#: pydantic_translations/_messages.py:65
+msgid "value is not a valid iterable"
+msgstr "值不是有效的可迭代对象"
+
+#: pydantic_translations/_messages.py:66
+msgid "JSON object must be str, bytes or bytearray"
+msgstr "JSON 对象必须是字符串、字节或字节数组"
+
+#: pydantic_translations/_messages.py:67
+msgid "value is not a valid list"
+msgstr "值不是有效的列表"
+
+#: pydantic_translations/_messages.py:68
+msgid "value is not none"
+msgstr "值不是 None"
+
+#: pydantic_translations/_messages.py:69
+msgid "none is not an allowed value"
+msgstr "None 不是一个允许的值"
+
+#: pydantic_translations/_messages.py:70
+msgid "value is not None"
+msgstr "值不是 None"
+
+#: pydantic_translations/_messages.py:71
+msgid "value is not a valid path"
+msgstr "值不是有效的路径"
+
+#: pydantic_translations/_messages.py:72
+#, python-brace-format
+msgid ""
+"ensure this value contains valid import path or valid callable: "
+"{error_message}"
+msgstr ""
+"确保此值包含有效的导入路径或有效的可调用对象：{error_message}"
+
+#: pydantic_translations/_messages.py:73
+msgid "value is not a valid sequence"
+msgstr "值不是有效的序列"
+
+#: pydantic_translations/_messages.py:74
+msgid "value is not a valid set"
+msgstr "值不是有效的集合"
+
+#: pydantic_translations/_messages.py:75
+#, python-brace-format
+msgid "subclass of {expected_class} expected"
+msgstr "期望 {expected_class} 的子类"
+
+#: pydantic_translations/_messages.py:76
+msgid "value is not a valid tuple"
+msgstr "值不是有效的元组"
+
+#: pydantic_translations/_messages.py:77
+msgid "value is not a valid uuid"
+msgstr "值不是有效的 UUID"
+
+#: pydantic_translations/_messages.py:78
+#, python-brace-format
+msgid "ensure this value has at most {limit_value} characters"
+msgstr "确保此值最多有 {limit_value} 个字符"
+
+#: pydantic_translations/_messages.py:79
+#, python-brace-format
+msgid "ensure this value has at least {limit_value} characters"
+msgstr "确保此值至少有 {limit_value} 个字符"
+
+#: pydantic_translations/_messages.py:80
+#, python-brace-format
+msgid "value is not a valid color: {reason}"
+msgstr "值不是一个有效的颜色：{reason}"
+
+#: pydantic_translations/_messages.py:81
+#, python-brace-format
+msgid "unexpected value; permitted: {permitted}"
+msgstr "值不在允许范围内；允许的值为：{permitted}"
+
+#: pydantic_translations/_messages.py:82
+msgid "date is not in the future"
+msgstr "日期不在未来"
+
+#: pydantic_translations/_messages.py:83
+msgid "date is not in the past"
+msgstr "日期不在过去"
+
+#: pydantic_translations/_messages.py:84
+#, python-brace-format
+msgid "ensure that there are no more than {max_digits} digits in total"
+msgstr "确保总位数不超过 {max_digits}"
+
+#: pydantic_translations/_messages.py:85
+#, python-brace-format
+msgid "ensure that there are no more than {decimal_places} decimal places"
+msgstr "确保小数位数不超过 {decimal_places}"
+
+#: pydantic_translations/_messages.py:87
+#, python-brace-format
+msgid ""
+"ensure that there are no more than {whole_digits} digits before the decimal "
+"point"
+msgstr ""
+"确保小数点前的数字不超过 {whole_digits}"
+
+#: pydantic_translations/_messages.py:88
+#, python-brace-format
+msgid ""
+"No match for discriminator {discriminator_key!r} and value "
+"{discriminator_value!r} (allowed values: {allowed_values})"
+msgstr ""
+"无法匹配区分键 {discriminator_key!r} 和值 {discriminator_value!r}（允许的值：{allowed_values}）"
+
+#: pydantic_translations/_messages.py:89
+#, python-brace-format
+msgid "Discriminator {discriminator_key!r} is missing in value"
+msgstr "值中缺少区分键 {discriminator_key!r}"
+
+#: pydantic_translations/_messages.py:111
+#, python-brace-format
+msgid "ensure this value has at most {limit_value} items"
+msgstr "确保此值的元素数量不超过 {limit_value}"
+
+#: pydantic_translations/_messages.py:112
+#, python-brace-format
+msgid "ensure this value has at least {limit_value} items"
+msgstr "确保此值的元素数量不少于 {limit_value}"
+
+#: pydantic_translations/_messages.py:93
+#, python-brace-format
+msgid "could not interpret byte unit: {unit}"
+msgstr "无法解析字节单位：{unit}"
+
+#: pydantic_translations/_messages.py:96
+msgid "the list has duplicated items"
+msgstr "列表中有重复项"
+
+#: pydantic_translations/_messages.py:97
+msgid "field required"
+msgstr "字段为必填项"
+
+#: pydantic_translations/_messages.py:98
+msgid "ensure this value is a finite number"
+msgstr "确保此值是一个有限数字"
+
+#: pydantic_translations/_messages.py:99
+#, python-brace-format
+msgid "ensure this value is greater than or equal to {limit_value}"
+msgstr "确保此值大于或等于 {limit_value}"
+
+#: pydantic_translations/_messages.py:100
+#, python-brace-format
+msgid "ensure this value is greater than {limit_value}"
+msgstr "确保此值大于 {limit_value}"
+
+#: pydantic_translations/_messages.py:101
+#, python-brace-format
+msgid "ensure this value is less than or equal to {limit_value}"
+msgstr "确保此值小于或等于 {limit_value}"
+
+#: pydantic_translations/_messages.py:102
+#, python-brace-format
+msgid "ensure this value is less than {limit_value}"
+msgstr "确保此值小于 {limit_value}"
+
+#: pydantic_translations/_messages.py:103
+#, python-brace-format
+msgid "ensure this value is a multiple of {multiple_of}"
+msgstr "确保此值是 {multiple_of} 的倍数"
+
+#: pydantic_translations/_messages.py:104
+#, python-brace-format
+msgid "path \"{path}\" does not point to a directory"
+msgstr "路径 \"{path}\" 不指向一个目录"
+
+#: pydantic_translations/_messages.py:105
+#, python-brace-format
+msgid "path \"{path}\" does not point to a file"
+msgstr "路径 \"{path}\" 不指向一个文件"
+
+#: pydantic_translations/_messages.py:106
+#, python-brace-format
+msgid "file or directory at path \"{path}\" does not exist"
+msgstr "路径 \"{path}\" 下的文件或目录不存在"
+
+#: pydantic_translations/_messages.py:107
+msgid "card number is not all digits"
+msgstr "卡号不是全数字"
+
+#: pydantic_translations/_messages.py:108
+#, python-brace-format
+msgid "Length for a {brand} card must be {required_length}"
+msgstr "{brand} 卡的长度必须为 {required_length}"
+
+#: pydantic_translations/_messages.py:109
+msgid "card number is not luhn valid"
+msgstr "卡号未通过 Luhn 校验"
+
+#: pydantic_translations/_messages.py:110
+msgid "Invalid regular expression"
+msgstr "无效的正则表达式"
+
+#: pydantic_translations/_messages.py:113
+#, python-brace-format
+msgid "string does not match regex \"{pattern}\""
+msgstr "字符串不符合正则表达式 \"{pattern}\""
+
+#: pydantic_translations/_messages.py:114
+#, python-brace-format
+msgid "wrong tuple length {actual_length}, expected {expected_length}"
+msgstr "元组长度错误，实际长度为 {actual_length}，期望长度为 {expected_length}"
+
+#: pydantic_translations/_messages.py:115
+#, python-brace-format
+msgid "URL invalid, extra characters found after valid URL: {extra!r}"
+msgstr "URL 无效，有效 URL 后发现多余字符：{extra!r}"
+
+#: pydantic_translations/_messages.py:116
+msgid "URL host invalid"
+msgstr "URL 主机无效"
+
+#: pydantic_translations/_messages.py:116
+msgid "URL host invalid, top level domain required"
+msgstr "URL 主机无效，必须包含顶级域名"
+
+#: pydantic_translations/_messages.py:117
+msgid "URL port invalid, port cannot exceed 65535"
+msgstr "URL 端口无效，端口号不能超过 65535"
+
+#: pydantic_translations/_messages.py:118
+msgid "invalid or missing URL scheme"
+msgstr "URL 协议无效或缺失"
+
+#: pydantic_translations/_messages.py:118
+msgid "URL scheme not permitted"
+msgstr "URL 协议不被允许"
+
+#: pydantic_translations/_messages.py:119
+msgid "userinfo required in URL but missing"
+msgstr "URL 中需要用户信息，但未提供"
+
+#: pydantic_translations/_messages.py:120
+#, python-brace-format
+msgid "uuid version {required_version} expected"
+msgstr "期望 UUID 版本为 {required_version}"
