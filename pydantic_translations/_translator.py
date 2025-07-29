@@ -132,9 +132,16 @@ class Translator:
         else:
             eng_pattern = eng_patterns
 
+        n = err.get('ctx', {}).get('limit_value')
+        if n is not None:
+            n = int(n) if isinstance(n, str) else n
+            trans_pattern = locale.get(eng_pattern, n=n, plural=eng_pattern).format(limit_value=n)
+        else:
+            trans_pattern = locale.get(eng_pattern)
+
         new_msg = _format(
             eng_pattern=eng_pattern,
-            trans_pattern=locale.get(eng_pattern),
+            trans_pattern=trans_pattern,
             eng_message=eng_message,
         )
         if new_msg is None:
@@ -147,7 +154,10 @@ class Translator:
     def _locale(self) -> Locale | None:
         if isinstance(self.locale, str):
             lang = self.locale.split('-')[0].split('_')[0]
-            return locales.get(lang)
+            locale_obj = locales.get(lang)
+            # Need to make dummy call to trigger message loading and have correct plural function
+            locale_obj.get('dummy', n=1, plural='dummy')
+            return locale_obj
         return self.locale
 
 
