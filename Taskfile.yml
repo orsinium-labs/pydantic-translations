@@ -112,12 +112,6 @@ tasks:
       - install:lint
     cmds:
       - "{{.LINT_PYTHON}} -m mypy {{.CLI_ARGS}}"
-  unify:
-    desc: "convert double quotes to single ones"
-    deps:
-      - install:lint
-    cmds:
-      - "{{.LINT_PYTHON}} -m unify -r -i --quote=\\' {{.CLI_ARGS}} pydantic_translations tests"
   isort:
     desc: "sort imports"
     deps:
@@ -159,7 +153,6 @@ tasks:
     desc: "run all code formatters"
     cmds:
       - task: isort
-      - task: unify
   lint:
     desc: "run all linters"
     cmds:

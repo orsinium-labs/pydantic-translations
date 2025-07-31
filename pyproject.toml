@@ -4,12 +4,10 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "pydantic-translations"
-authors = [
-    {name = "Gram", email = "git@orsinium.dev"},
-]
-license = {file = "LICENSE"}
+authors = [{ name = "Gram", email = "git@orsinium.dev" }]
+license = { file = "LICENSE" }
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 dynamic = ["version", "description"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -18,32 +16,13 @@ classifiers = [
     "Programming Language :: Python",
     "Typing :: Typed",
 ]
-keywords = [
-    "mypy",
-    "typing",
-    "annotations",
-    "type annotations",
-]
-dependencies = [
-    "l10n",
-    "pydantic >=1.0.0,<2.0.0",
-]
+keywords = ["mypy", "typing", "annotations", "type annotations"]
+dependencies = ["l10n", "pydantic >=1.0.0,<2.0.0"]
 
 [project.optional-dependencies]
-test = [
-    "pytest",
-    "pytest-cov",
-]
-lint = [
-    "flake8",
-    "isort",
-    "mypy",
-    "unify",
-]
-l10n = [
-    "l10n[cli]",
-    "mypy",
-]
+test = ["pytest", "pytest-cov"]
+lint = ["flake8", "isort", "mypy"]
+l10n = ["l10n[cli]", "mypy"]
 
 [project.urls]
 Source = "https://github.com/orsinium-labs/pydantic-translations"
@@ -53,7 +32,7 @@ name = "pydantic_translations"
 
 [tool.mypy]
 files = ["pydantic_translations"]
-python_version = 3.8
+python_version = "3.9"
 ignore_missing_imports = true
 # follow_imports = "silent"
 show_error_codes = true
