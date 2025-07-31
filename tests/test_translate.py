@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import pydantic
 import pytest
-from typing import List
 
 from pydantic_translations import Translator
 from pydantic_translations._translator import _format
@@ -50,27 +49,28 @@ def test_translator__context_manager() -> None:
 
 
 class MinOneMaxTen(pydantic.BaseModel):
-    items: List[str] = pydantic.Field(..., min_items=1, max_items=10)
+    items: list[str] = pydantic.Field(..., min_items=1, max_items=10)
+
 
 class MinTwo(pydantic.BaseModel):
-    items: List[str] = pydantic.Field(..., min_items=2)
+    items: list[str] = pydantic.Field(..., min_items=2)
+
 
 class MinFive(pydantic.BaseModel):
-    items: List[str] = pydantic.Field(..., min_items=5)
+    items: list[str] = pydantic.Field(..., min_items=5)
+
 
 class MinTwentyOne(pydantic.BaseModel):
-    items: List[str] = pydantic.Field(..., min_items=21)
+    items: list[str] = pydantic.Field(..., min_items=21)
 
-@pytest.mark.parametrize(
-    "model_class, test_data, expected_substring",
-    [
-        (MinOneMaxTen, {"items": []}, "как минимум 1 элемент"),
-        (MinOneMaxTen, {"items": ["a"]*11}, "максимум 10 элементов"),
-        (MinTwo, {"items": ["a"]}, "как минимум 2 элемента"),
-        (MinFive, {"items": ["a", "b", "c"]}, "как минимум 5 элементов"),
-        (MinTwentyOne, {"items": ["a", "b", "c"]}, "как минимум 21 элемент"),
-    ]
-)
+
+@pytest.mark.parametrize('model_class, test_data, expected_substring', [
+    (MinOneMaxTen, {"items": []}, "как минимум 1 элемент"),
+    (MinOneMaxTen, {"items": ["a"] * 11}, "максимум 10 элементов"),
+    (MinTwo, {"items": ["a"]}, "как минимум 2 элемента"),
+    (MinFive, {"items": ["a", "b", "c"]}, "как минимум 5 элементов"),
+    (MinTwentyOne, {"items": ["a", "b", "c"]}, "как минимум 21 элемент"),
+])
 def test_russian_list_pluralization(
     model_class, test_data, expected_substring
 ):

@@ -156,7 +156,8 @@ class Translator:
             lang = self.locale.split('-')[0].split('_')[0]
             locale_obj = locales.get(lang)
             # Need to make dummy call to trigger message loading and have correct plural function
-            locale_obj.get('dummy', n=1, plural='dummy')
+            if locale_obj is not None:
+                locale_obj.get('dummy', n=1, plural='dummy')
             return locale_obj
         return self.locale
 
