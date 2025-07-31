@@ -46,3 +46,38 @@ def test_translator__context_manager() -> None:
         with tr:
             User.parse_obj({'name': '', 'age': 'hi'})
     assert exc.value.errors()[0]['msg'] == 'значение должно быть целым числом'
+
+
+class MinOneMaxTen(pydantic.BaseModel):
+    items: list[str] = pydantic.Field(..., min_items=1, max_items=10)
+
+
+class MinTwo(pydantic.BaseModel):
+    items: list[str] = pydantic.Field(..., min_items=2)
+
+
+class MinFive(pydantic.BaseModel):
+    items: list[str] = pydantic.Field(..., min_items=5)
+
+
+class MinTwentyOne(pydantic.BaseModel):
+    items: list[str] = pydantic.Field(..., min_items=21)
+
+
+@pytest.mark.parametrize('model_class, test_data, expected_substring', [
+    (MinOneMaxTen, {"items": []}, "как минимум 1 элемент"),
+    (MinOneMaxTen, {"items": ["a"] * 11}, "максимум 10 элементов"),
+    (MinTwo, {"items": ["a"]}, "как минимум 2 элемента"),
+    (MinFive, {"items": ["a", "b", "c"]}, "как минимум 5 элементов"),
+    (MinTwentyOne, {"items": ["a", "b", "c"]}, "как минимум 21 элемент"),
+])
+def test_russian_list_pluralization(
+    model_class, test_data, expected_substring
+):
+    tr = Translator('ru')
+    with pytest.raises(pydantic.ValidationError) as exc:
+        with tr:
+            model_class.parse_obj(test_data)
+
+    error_msg = exc.value.errors()[0]['msg']
+    assert expected_substring in error_msg

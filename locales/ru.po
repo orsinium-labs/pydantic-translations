@@ -277,12 +277,18 @@ msgstr ""
 #: pydantic_translations/_messages.py:111
 #, python-brace-format
 msgid "ensure this value has at most {limit_value} items"
-msgstr "значение должно содержать максимум {limit_value} элементов"
+msgid_plural "ensure this value has at most {limit_value} items"
+msgstr[0] "список должен содержать максимум {limit_value} элемент"
+msgstr[1] "список должен содержать максимум {limit_value} элемента"
+msgstr[2] "список должен содержать максимум {limit_value} элементов"
 
 #: pydantic_translations/_messages.py:112
 #, python-brace-format
 msgid "ensure this value has at least {limit_value} items"
-msgstr "значение должно содержать как минимум {limit_value} элементов"
+msgid_plural "ensure this value has at least {limit_value} items"
+msgstr[0] "список должен содержать как минимум {limit_value} элемент"
+msgstr[1] "список должен содержать как минимум {limit_value} элемента"
+msgstr[2] "список должен содержать как минимум {limit_value} элементов"
 
 #: pydantic_translations/_messages.py:93
 #, python-brace-format
