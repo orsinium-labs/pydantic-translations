@@ -135,7 +135,11 @@ class Translator:
         n = err.get('ctx', {}).get('limit_value')
         if n is not None:
             n = int(n) if isinstance(n, str) else n
-            trans_pattern = locale.get(eng_pattern, n=n, plural=eng_pattern).format(limit_value=n)
+            trans_pattern = locale.get(eng_pattern, n=n, plural=eng_pattern)
+            if trans_pattern == eng_pattern:
+                # No plural translation found, try singular
+                trans_pattern = locale.get(eng_pattern)
+            trans_pattern = trans_pattern.format(limit_value=n)
         else:
             trans_pattern = locale.get(eng_pattern)
 

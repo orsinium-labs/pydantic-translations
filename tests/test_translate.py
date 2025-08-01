@@ -18,13 +18,14 @@ def test_format() -> None:
 
 @pytest.mark.parametrize('lang, given, expected', [
     ('ru', {'name': 'Aragorn', 'age': 88}, None),
+    ('ru', {'name': 'Aragorn', 'age': 0}, 'значение должно быть больше 0'),
     ('ru', {'name': '', 'age': 'hi'}, 'значение должно быть целым числом'),
     ('en', {'name': '', 'age': 'hi'}, 'value is not a valid integer'),
 ])
 def test_translator(lang: str, given: object, expected: str | None) -> None:
     class User(pydantic.BaseModel):
         name: str
-        age: int = 21
+        age: int = pydantic.Field(..., gt=0)
 
     tr = Translator(lang)
     try:
