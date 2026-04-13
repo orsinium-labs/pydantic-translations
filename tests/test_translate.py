@@ -21,6 +21,9 @@ def test_format() -> None:
     ('ru', {'name': 'Aragorn', 'age': 0}, 'значение должно быть больше 0'),
     ('ru', {'name': '', 'age': 'hi'}, 'значение должно быть целым числом'),
     ('en', {'name': '', 'age': 'hi'}, 'value is not a valid integer'),
+    ('pt', {'name': 'Aragorn', 'age': 88}, None),
+    ('pt', {'name': 'Aragorn', 'age': 0}, 'o valor deve ser maior que 0'),
+    ('pt', {'name': '', 'age': 'hi'}, 'o valor não é um inteiro válido'),
 ])
 def test_translator(lang: str, given: object, expected: str | None) -> None:
     class User(pydantic.BaseModel):
